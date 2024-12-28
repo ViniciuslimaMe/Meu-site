@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-family: arial;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+ 
+ header {
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    position: fixed;
+    width: 100%;
+    
+}
+
+footer{
+     background:  #e5e7e9 linear-gradient(to left, #ecebeb, #ffffff);   
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+body {
+background-color: #fafafa;
+}
+
+.conteudo{
+    font-size: 1.6rem;
+    color:#000;
+    padding:  1.5rem;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 90%; 
+}
+.conteudo-topo{
+    background-image: url("../img/jf.jpg");
+    top:0;
+    width: 100%;
+    max-width: 100%; 
+    padding-top: 200px; 
+
+}
+
+.logo {
+    width: 230px;
+    margin-top: -12%;
+    
+    
+}
+.logo-pegada2 a:hover{
+    background-color: transparent;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    color: #ffff00;
+}
+h2{
+    font-size: 1.9rem;
+    color: #000;
+}
+
+h3 {
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    color: #FFF;
+}
+
+h5{
+    font-size: 3rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #000000;
+    text-align: center;
+
+}
+
+
+
+/* .logo-central figure img{
+    position: -ms-page;
+    position: unset;
+    margin-top: 50px;
+    border-radius: 3%;
+    text-align: center;
+} */
+ #logo-pegada figure img{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    top: 285px;
+    position:fixed   
+} 
+
+
+figure{
+        text-align:center;
+   }  
+       
+
+.imagens-site{
+    border-radius: 2px;
+    width: 400px;
+    height: 300px;
+}
+/* @media(min-width: 280x) and (max-width: 820px){
+
+    .imagens-site{
+    border-radius: 10px 10px 10px 10px ;
+    width: 70%;
+    height: 50%; 
+}
+} */
+#compras {
+    /* width: 100px;
+    height: 60px; */
+    right: 0; 
+    position: fixed;
+    text-align: center;
+    margin-top: 320px;
+    z-index: 3;
+    border-radius: 10px;
+    /* border: solid #eda6a6; */
+}
+
+
+/* @media(min-width: 280x) and (max-width: 820px){
+
+    #compras{
+    background-color: rgba(255, 215, 0, 0.5);
+    color: rgb(0,0,0);
+    width: 100px;
+    height: 60px;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    margin-top: 25rem;
+    z-index: 1;
+    border-radius: 2px;
+    padding-top: 5px;
+    border: solid rgb(0,0,0,0.2);
+}
+} */
+#compras figure img {
+    width: 90px;
+    height: 80px;
+
+}
+
+.separador {
+    position: relative;
+}
+
+.line {
+    border-top: 1px double;
+    width: 22%;
+    margin: auto ;
+    
+   
+}
+ 
+#btn-compras{
+   
+     border-radius:5px;
+     background-color:transparent;
+    
+} 
+
+
+#grid-conteudo{
+    background-color: #FaFaFa;
+
+    padding-top: 20rem;
+
+}
+
+.grid{
+    
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(420px, 1fr));
+    grid-gap: 1px;
+    max-width: 100%;
+}
+.grid div{
+    background-color: #fafafa;
+    padding: 0.5rem;
+
+}
+
+
+input{
+    border: solid;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+#mensagem{
+    border: solid;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 1.6 rem;
+}
+
+nav{
+    text-align: right;
+    font-size: 1.6 rem;
+    word-spacing: 15px;
+    margin-right: 3%;
+    padding-bottom: 5px;
+
+}
+a{
+    text-decoration:none;
+    color: #ffff00;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+a:hover{
+    color: #fafafa;
+    text-shadow: 1px 1px 2px #000;
+    border-color:#ffff00;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+@media(max-width:1100px){
+    header {
+        font-size: 2.2rem;
+        width: 96%;
+    }
+    #logo-pegada figure img {
+        
+        width: 150px;
+        height: 150px;
+        top: 360px;
+    }
+}
+@media (max-width: 576px){
+    header {
+        font-size: 1.2rem;
+        width: 96%;
+        text-align:start;
+    }
+    .conteudo-topo {
+        padding-top: 150px;
+    }
+    #logo-pegada figure img {
+        
+        width: 100px;
+        height: 100px;
+    }
+    /* #btn-compras{
+        width: 190px;
+    } */
+.logo {
+    width: 150px;
+    margin-top:-83px ;
+}
+h1 {
+    font-size: 2rem;
+    text-align:center
+}
+#compras figure img {
+    width: 46px;
+    height: 49px;
+    text-transform:capitalize
+}
+
+.imagens-site{
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+}
+}
